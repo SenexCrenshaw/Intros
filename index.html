@@ -1,32 +1,38 @@
-# Video Gallery
-
-<style>
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.gallery-item {
-    margin: 10px;
-    position: relative;
-}
-.gallery-item img {
-    width: 200px;
-    transition: opacity 0.3s ease-in-out;
-}
-.gallery-item .hover-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-.gallery-item:hover .hover-gif {
-    opacity: 1;
-}
-</style>
-
-<div class='gallery-container'><div class='gallery-item'>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery-item {
+            margin: 10px;
+            position: relative;
+        }
+        .gallery-item img {
+            width: 200px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .gallery-item .hover-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .gallery-item:hover .hover-gif {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Gallery</h1>
+    <div class="gallery-container"><div class='gallery-item'>
   <a href='Intro.mp4' target='_blank'>
     <img src='Intro.jpg' alt='Intro'>
     <img class='hover-gif' src='Gifs/Intro.gif' alt='Intro'>
@@ -68,4 +74,6 @@
     <img class='hover-gif' src='Gifs/Intro7.gif' alt='Intro7'>
   </a>
   <p>Intro7</p>
-</div></div>
+</div>    </div>
+</body>
+</html>
