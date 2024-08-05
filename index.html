@@ -3,36 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Gallery</title>
+    <title>Intro Gallery</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #444;
+        }
         .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
         }
         .gallery-item {
-            margin: 10px;
             position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
         }
         .gallery-item img {
-            width: 200px;
+            width: 100%;
+            display: block;
             transition: opacity 0.3s ease-in-out;
         }
         .gallery-item .hover-gif {
             position: absolute;
             top: 0;
             left: 0;
-            width: 200px;
+            width: 100%;
+            height: 100%;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
         .gallery-item:hover .hover-gif {
             opacity: 1;
         }
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+        .gallery-item p {
+            text-align: center;
+            margin: 10px 0 0;
+            font-size: 1.1em;
+            color: #555;
+        }
     </style>
 </head>
 <body>
-    <h1>Video Gallery</h1>
-    <div class="gallery-container"><div class='gallery-item'>
+    <div class="container">
+        <h1>Intro Gallery</h1>
+        <div class="gallery-container"><div class='gallery-item'>
   <a href='Intro.mp4' target='_blank'>
     <img src='Intro.jpg' alt='Intro'>
     <img class='hover-gif' src='Gifs/Intro.gif' alt='Intro'>
@@ -74,6 +109,7 @@
     <img class='hover-gif' src='Gifs/Intro7.gif' alt='Intro7'>
   </a>
   <p>Intro7</p>
-</div>    </div>
+</div>        </div>
+    </div>
 </body>
 </html>
