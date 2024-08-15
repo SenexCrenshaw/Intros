@@ -11,4 +11,5 @@
 | ![Thumbnail of Intro5](Gifs/Intro5.gif) | [Intro5.mp4](./Intro5.mp4) | 9 seconds |
 | ![Thumbnail of Intro6](Gifs/Intro6.gif) | [Intro6.mp4](./Intro6.mp4) | 14 seconds |
 | ![Thumbnail of Intro7](Gifs/Intro7.gif) | [Intro7.mp4](./Intro7.mp4) | 10 seconds |
+| ![Thumbnail of Intro8](Gifs/Intro8.gif) | [Intro8.mp4](./Intro8.mp4) | 6 seconds |
 
